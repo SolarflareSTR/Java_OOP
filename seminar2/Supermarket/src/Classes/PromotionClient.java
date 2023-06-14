@@ -4,7 +4,7 @@ import Interfaces.iActorBehaviour;
 
 public class PromotionClient extends Actor implements iActorBehaviour {
 
-    public PromotionClient(String name,String PromoName, int PromoID) {
+    public PromotionClient(String name,String PromoName, int PromoID, int PromoPlaces) {
       super(name);
     }
 
