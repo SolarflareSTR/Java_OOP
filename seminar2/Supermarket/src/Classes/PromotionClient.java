@@ -4,23 +4,23 @@ import Interfaces.iActorBehaviour;
 
 public class PromotionClient extends Actor implements iActorBehaviour {
 
-    public PromotionClient(String name,String PromoName, int PromoID, int PromoPlaces) {
+    public PromotionClient(String name, String PromoName, int PromoID, int PromoPlaces) {
       super(name);
     }
 
     @Override
-    public String getName() {
+    public String getName() { // получаем имя
         return super.name;
     }
-    public String getPromoName() {
+    public String getPromoName() { // получаем название акции
         return super.name;
     }
 
-    public boolean isTakeOrder() {
+    public boolean isTakeOrder() { // взял ли заказ
       return super.isTakeOrder;
     }
 
-    public boolean isMakeOrder() {
+    public boolean isMakeOrder() { // совершил ли заказ
       return super.isMakeOrder;
     }
 
@@ -33,6 +33,10 @@ public class PromotionClient extends Actor implements iActorBehaviour {
     }
 
     public Actor getActor() {
+      return this;
+    }
+
+    public int PromoPlaces() { // количество оставшихся мест в акции
       return this;
     }
 
